@@ -1,0 +1,188 @@
+{
+  "brand_identity": {
+    "name": "EcoSayahat",
+    "tone": "Fresh, Sustainable, Trustworthy, Modern, Adventurous",
+    "aesthetic": "Biophilic Design",
+    "core_values": ["Sustainability", "Innovation", "Connection to Nature"],
+    "description": "A platform connecting tourists with the raw beauty of Kazakhstan while promoting eco-friendly practices."
+  },
+  "typography": {
+    "headings": {
+      "font_family": "Outfit, sans-serif",
+      "weights": ["600", "700"],
+      "usage": "Use for all section titles, hero text, and card headers. The rounded nature of Outfit mimics organic shapes."
+    },
+    "body": {
+      "font_family": "Manrope, sans-serif",
+      "weights": ["400", "500"],
+      "usage": "Use for all paragraphs, UI labels, and data inputs. Manrope is highly legible and modern."
+    },
+    "scale": {
+      "h1": "text-4xl md:text-6xl font-bold tracking-tight",
+      "h2": "text-3xl md:text-4xl font-semibold tracking-tight",
+      "h3": "text-2xl font-semibold",
+      "body": "text-base leading-relaxed text-slate-600 dark:text-slate-300",
+      "small": "text-sm text-slate-500 dark:text-slate-400"
+    }
+  },
+  "colors": {
+    "primary": {
+      "DEFAULT": "#10B981",
+      "foreground": "#FFFFFF",
+      "hover": "#059669",
+      "light": "#D1FAE5",
+      "dark": "#064E3B"
+    },
+    "secondary": {
+      "DEFAULT": "#F59E0B",
+      "foreground": "#FFFFFF",
+      "light": "#FEF3C7"
+    },
+    "background": {
+      "light": "#FFFFFF",
+      "subtle": "#F0FDF4",
+      "dark": "#022C22",
+      "card_light": "#FFFFFF",
+      "card_dark": "#064E3B"
+    },
+    "text": {
+      "primary": "#0F172A",
+      "secondary": "#64748B",
+      "dark_primary": "#F1F5F9",
+      "dark_secondary": "#94A3B8"
+    },
+    "status": {
+      "success": "#10B981",
+      "warning": "#F59E0B",
+      "error": "#EF4444",
+      "info": "#3B82F6"
+    }
+  },
+  "visual_enhancers": {
+    "radius": "rounded-2xl",
+    "shadows": {
+      "card": "shadow-[0_8px_30px_rgb(0,0,0,0.04)]",
+      "hover": "shadow-[0_8px_30px_rgb(0,0,0,0.12)]",
+      "button": "shadow-lg shadow-emerald-500/20"
+    },
+    "glassmorphism": {
+      "light": "bg-white/70 backdrop-blur-xl border border-white/20",
+      "dark": "bg-emerald-950/70 backdrop-blur-xl border border-white/10"
+    },
+    "gradients": {
+      "hero": "bg-gradient-to-br from-emerald-50 to-white dark:from-emerald-950 dark:to-black",
+      "card": "bg-gradient-to-b from-white to-emerald-50/30 dark:from-emerald-900/50 dark:to-emerald-950"
+    }
+  },
+  "layout_strategies": {
+    "general": {
+      "container": "max-w-7xl mx-auto px-4 sm:px-6 lg:px-8",
+      "section_spacing": "py-16 md:py-24"
+    },
+    "region_selection": {
+      "type": "bento_grid",
+      "description": "Asymmetric grid showcasing regions. Use large cards for featured regions (Burabay, Caspian) and smaller ones for others.",
+      "grid_classes": "grid grid-cols-1 md:grid-cols-3 gap-6"
+    },
+    "tourist_dashboard": {
+      "type": "tabbed_interface",
+      "description": "Top-level tabs for switching contexts (Map, Attractions, Taxi, etc.). Keep the wallet visible in the header.",
+      "layout": "flex flex-col h-screen"
+    },
+    "map_view": {
+      "type": "full_screen_overlay",
+      "description": "Map should take up maximum space. Floating cards for details.",
+      "height": "h-[calc(100vh-64px)]"
+    }
+  },
+  "component_guidelines": {
+    "buttons": {
+      "primary": "rounded-full px-8 py-3 bg-primary text-white hover:bg-primary-hover transition-all duration-300 shadow-lg shadow-emerald-500/20 active:scale-95",
+      "secondary": "rounded-full px-6 py-3 bg-white text-primary border border-emerald-100 hover:bg-emerald-50 transition-all duration-300",
+      "ghost": "rounded-lg px-4 py-2 hover:bg-emerald-50 text-emerald-700 transition-colors"
+    },
+    "cards": {
+      "standard": "bg-white dark:bg-emerald-900/40 rounded-2xl border border-emerald-100/50 dark:border-emerald-800 shadow-sm hover:shadow-md transition-shadow p-6",
+      "interactive": "group cursor-pointer hover:-translate-y-1 transition-transform duration-300"
+    },
+    "inputs": {
+      "style": "rounded-xl border-emerald-100 focus:border-emerald-500 focus:ring-emerald-500/20 bg-emerald-50/30"
+    },
+    "tabs": {
+      "list": "bg-emerald-50/50 p-1 rounded-full",
+      "trigger": "rounded-full data-[state=active]:bg-white data-[state=active]:text-emerald-700 data-[state=active]:shadow-sm transition-all"
+    }
+  },
+  "image_assets": {
+    "regions": {
+      "caspian": {
+        "url": "https://images.pexels.com/photos/20591591/pexels-photo-20591591.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Caspian Sea Coast - Aktau",
+        "usage": "Region card, Hero section"
+      },
+      "burabay": {
+        "url": "https://images.unsplash.com/photo-1761829717820-98dff45b8d9f?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA2ODl8MHwxfHNlYXJjaHwxfHxCdXJhYmF5JTIwTmF0aW9uYWwlMjBQYXJrJTIwS2F6YWtoc3RhbiUyMGxha2UlMjBmb3Jlc3R8ZW58MHx8fHwxNzcxNjA1ODU3fDA&ixlib=rb-4.1.0&q=85",
+        "alt": "Burabay National Park",
+        "usage": "Region card, Nature background"
+      },
+      "alakol": {
+        "url": "https://images.pexels.com/photos/13544773/pexels-photo-13544773.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Lake Alakol Shore",
+        "usage": "Region card"
+      },
+      "balkhash": {
+        "url": "https://images.pexels.com/photos/32849826/pexels-photo-32849826.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Lake Balkhash View",
+        "usage": "Region card"
+      },
+      "kolsay": {
+        "url": "https://images.pexels.com/photos/24816020/pexels-photo-24816020.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Kolsay Lakes",
+        "usage": "Region card"
+      }
+    },
+    "services": {
+      "eco_taxi": {
+        "url": "https://images.pexels.com/photos/26921632/pexels-photo-26921632.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Electric Eco Taxi SUV",
+        "usage": "Taxi booking tab, Service highlights"
+      },
+      "hotels": {
+        "url": "https://images.pexels.com/photos/14106949/pexels-photo-14106949.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Eco Glamping Hotel",
+        "usage": "Hotel booking tab"
+      },
+      "eco_tasks": {
+        "url": "https://images.pexels.com/photos/11410839/pexels-photo-11410839.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+        "alt": "Nature Cleanup Task",
+        "usage": "Eco Tasks tab, Community section"
+      }
+    }
+  },
+  "motion_guidelines": {
+    "transitions": "transition-all duration-300 ease-in-out",
+    "hover_effects": "hover:shadow-lg hover:-translate-y-1",
+    "page_transition": "animate-in fade-in slide-in-from-bottom-4 duration-500",
+    "micro_interactions": "Active states should have a subtle 'pop' effect (scale-105)."
+  },
+  "accessibility_checklist": [
+    "Ensure 4.5:1 contrast ratio for text on green backgrounds.",
+    "Use distinct focus rings (ring-offset-2 ring-emerald-500).",
+    "All images must have alt text.",
+    "Interactive elements must have a minimum touch target of 44x44px.",
+    "Support keyboard navigation for tabs and map controls."
+  ],
+  "technical_instructions": {
+    "icons": "Use Lucide React icons. Prefer outlined style with 1.5px stroke width.",
+    "maps": "Use React-Leaflet with a custom tile layer (e.g., CartoDB Positron for clean look). Do NOT use default OSM tiles if possible, or style them with CSS filters to desaturate.",
+    "charts": "Use Recharts with the defined color palette (Emerald for positive, Amber for neutral).",
+    "360_view": "Ensure Pannellum viewer is responsive and lazy-loaded."
+  },
+  "universal_guidelines": [
+    "Do not use generic gradients. Use subtle mesh gradients or solid colors.",
+    "Avoid using 'Inter' for headings. Use 'Outfit' or 'Manrope'.",
+    "Do not center-align everything. Use grid layouts.",
+    "Use glassmorphism for overlays (modals, floating cards) to keep context visible.",
+    "Ensure the 'EcoCoin' wallet is always visible and playful."
+  ]
+}
